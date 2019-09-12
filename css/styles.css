@@ -70,6 +70,7 @@ body{
     background: linear-gradient(#324851, #86AC41);
     width: 100%;
     box-sizing: border-box;
+    min-height: calc(100vh - 150px);
 }
 
 .main{
@@ -432,6 +433,41 @@ body{
   }
 
   /***** END FOOTER *****/
+
+
+/****** start 404 ******/
+
+.container__message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    height: calc(100vh - 210px);
+
+}
+
+.container__message--title{
+    font-size: 60px;
+    animation-name: palpitation;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse ;
+
+}
+
+.container__message--subtitle{
+    font-size: 24px;
+}
+
+@keyframes palpitation{
+    from{ transform: scale(1.2); }
+    25%{ transform: scale(1); }
+    50%{ transform: scale(1.2); }
+    75%{ transform: scale(1); }
+}
+
+/***** Responsive ******/
 
   @media only screen and (max-width: 600px){
 
